@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    margin: auto;
+    width: 600px;
+}
+
+#image-element{
+    margin-top: 80px;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#btn{
+    font-family: "Roboto Mono", serif;
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: transform 0.2s ease;
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+@media (max-width: 768px) {
+
+    #image-element{
+        margin-top: 30px;
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .wrapper{
+        margin: auto;
+        width: 350px;
+    }
+
+    #btn{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
