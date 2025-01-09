@@ -1,3 +1,5 @@
+api_key = process.env.API_KEY;
+
 async function getData(){
     try{
 
@@ -5,7 +7,7 @@ async function getData(){
 
             method: 'GET',
             headers: {
-                'x-api-key' : 'live_lMZ1oJtpUCiXvKcWHzSHrXxaT3tlnHAyjfHZsCARtVRZKIJkbfhOsqiC2eZ366zO'
+                'x-api-key' : `$(api_key)`
             }
         })
 
