@@ -17,8 +17,9 @@ body{
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     width: 600px;
-    height: 500px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: black;
+    height: auto;
 }
 
 .container{
@@ -63,8 +64,9 @@ button:active{
     #image-element{
         margin-top: 30px;
         width: 350px;
-        height: 400px;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
+        background-color: black;
         border-radius: 8px;
     }
 
