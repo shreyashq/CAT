@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <button onclick="getData()" id="btn">generate 🐾</button>
+  <body class="bg-gray-600">
+    <div class="flex-col text-center my-5 m-auto w-[70vw] items-center justify-items-center">
 
-        <img src="" alt="cat-image" id="image-element" style="display: none" />
+      <button class="bg-black text-white p-3 text-xl rounded-lg font-mono active:scale-95 hover:cursor-pointer" onclick="getData()" id="btn">generate 🐾</button>
+      <div class="justify-items-center my-10 w-xl">
+        <img class="rounded my-2" src="" alt="cat-image" id="image-element" style="display: none" />
+        
       </div>
     </div>
   </body>

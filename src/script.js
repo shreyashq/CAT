@@ -1,5 +1,7 @@
 api_key = process.env.API_KEY;
 
+
+
 async function getData(){
     try{
 
@@ -25,5 +27,7 @@ async function getData(){
     catch(error){
         console.error(error);
     }
+
+    document.querySelector('.hidden').classList.remove('hidden')
 }
 
